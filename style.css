@@ -288,6 +288,9 @@ html{
     margin:0 0.5rem;
 }
 
+.grid-hero-section{
+    display: none;
+}
 
 @media only screen and (min-width: 600px) {
     html{
@@ -301,4 +304,43 @@ html{
         font-size: 20px;
     }
     
+}
+
+@media only screen and (min-width: 700px) {
+ 
+    .hero-section{
+        display: none;
+    }
+
+    .grid-hero-section{
+        display: grid;
+       grid-template-columns: 2fr 1.7fr 1.5fr;
+        grid-template-areas: 
+        "text img get";
+
+    }
+
+    .get-inspired{
+        background-color: #59253E;
+        grid-area: "get";
+        margin-left: 30px;
+    }
+   
+    .grid-hero-text{
+        background-color: #7B7B7B;
+        grid-area: "text";
+    }
+
+    .grid-hero-image{
+        grid-area: "img";
+        margin-left: 67px;
+    }
+
+    .hero-para{
+        font-size: 14px;
+    }
+
+    .hero-heading{
+        margin-bottom: 65px;
+    }
 }
